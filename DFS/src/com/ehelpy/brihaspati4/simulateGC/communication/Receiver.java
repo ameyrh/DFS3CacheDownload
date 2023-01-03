@@ -21,7 +21,7 @@ public class Receiver {
         ServerSocket serverSocket = null;
 
         try {
-            serverSocket = new ServerSocket(4445);
+            serverSocket = new ServerSocket(4444);
             log.debug("Server started");
         } catch (IOException ex) {
             log.debug("Can't setup server on this port number. ");

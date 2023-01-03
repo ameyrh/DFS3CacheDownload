@@ -5,7 +5,7 @@ import java.net.Socket;
 
 public class Sender {
     public static void start(File xmlFile, String IP) throws IOException {
-        try (Socket socket = new Socket(IP, 4445)) {
+        try (Socket socket = new Socket(IP, 4444)) {
             byte[] bytes = new byte[16 * 1024];
             InputStream in = new FileInputStream(xmlFile);
             OutputStream out = socket.getOutputStream();
